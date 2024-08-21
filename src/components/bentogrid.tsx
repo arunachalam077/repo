@@ -1,6 +1,6 @@
 "use client"
-import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import React, { useEffect, useRef, useState } from 'react';
 
 const logos = [
   "https://res.cloudinary.com/dl2adjye7/image/upload/v1716817722/Amazon_icon.svg_a4qmtg.png",
@@ -211,7 +211,7 @@ const BentoBox1 = () => {
           <div className="flex flex-col justify-between h-full">
             <div className="mb-4 px-6 mt-6">
               <div className="flex justify-between items-center mb-6 pb-2">
-                <h2 className="text-white/70 text-xl">Sales Data</h2>
+                <h2 className="text-white/70 text-xl">Ad data</h2>
                 <div className="flex items-center">
                   <div className="h-1 bg-black w-8 rounded-lg"></div>
                   <span className="ml-2 text-white/70 text-sm">Growth</span>
@@ -267,24 +267,11 @@ const BentoBox1 = () => {
             </div>
             <div className="text-left p-6 mt-4">
               <h1 className="text-white text-2xl font-bold mb-2">Incredible Growth</h1>
-              <p className="text-white/70 text-lg">Fly through your tasks with rapid-fire keyboard shortcuts for everything. Literally everything.</p>
+              <p className="text-white/70 text-lg">As businesses scale, a robust ad-running marketing strategy becomes crucial for driving sustained growth and achieving a competitive edge.</p>
             </div>
           </div>
         </CardWithEffect>
-        <div className="flex flex-col w-full md:w-1/2 gap-5 h-full md:h-[800px]">
-          <CardWithEffect>
-            <div className="flex flex-col justify-center h-full">
-              <LogoBeam />
-              <div className="text-left p-6">
-                <h1 className="text-white text-2xl font-bold mb-2">Multiple Technologies</h1>
-                <p className="text-white/70 text-lg">Fly through your tasks with rapid-fire keyboard shortcuts for everything. Literally everything.</p>
-              </div>
-            </div>
-          </CardWithEffect>
-          <CardWithEffect>
-            <AWSIcon />
-          </CardWithEffect>
-        </div>
+      
       </div>
     </div>
   );

@@ -1,29 +1,28 @@
 "use client"
+import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from "react";
-import PlusIcon from "../assets/icons/plus.svg";
 import MinusIcon from "../assets/icons/minus.svg";
-import clsx from "clsx";
-import {motion , AnimatePresence} from 'framer-motion';
+import PlusIcon from "../assets/icons/plus.svg";
 const items = [
   {
-    question: "What payment methods do you accept?",
+    question: "Arun jacky",
     answer:
-      "We accept all major credit cards, PayPal, and various other payment methods depending on your location. Please contact our support team for more information on accepted payment methods in your region.",
+      'one of the best digital marketing companies in Chennai. I have worked with them for the past two years for my digital marketing needs and I can confidently say that they have exceeded my expectations. They have a team of experienced digital marketing professionals who understand the latest trends and technologies in the digital marketing world and provide excellent services that meet my business needs. They are always available to provide guidance and advice whenever I need it, which makes it easy to make the right decisions for my business. I would highly recommend them to anyone looking for a reliable and professional digital marketing company.',
   },
   {
-    question: "How does the pricing work for teams?",
+    question: "Mathesh maddy",
     answer:
-      "Our pricing is per user, per month. This means you only pay for the number of team members you have on your account. Discounts are available for larger teams and annual subscriptions.",
+      "“Working with Agency has been an absolute pleasure! Their team is knowledgeable, professional, and truly passionate about their work. They’ve helped us increase our online visibility and attract more customers to our business. I highly recommend them to anyone looking for a reliable marketing partner .”",
   },
   {
-    question: "Can I change my plan later?",
+    question: "Karnan Nicholas",
     answer:
-      "Yes, you can upgrade or downgrade your plan at any time. Changes to your plan will be prorated and reflected in your next billing cycle.",
+      "I have used the services of Michtam Tecno Solution in Chennai for my digital marketing campaigns and they have been really great. They have implemented a comprehensive online marketing strategy that has helped me to reach my target audience and generate more leads and sales. They have provided me with detailed reports on the progress of my campaigns, which have been very helpful in monitoring my results. They have also provided me with the necessary tools and resources to ensure my campaigns are effective.",
   },
   {
-    question: "Is my data secure?",
+    question: "john",
     answer:
-      "Security is our top priority. We use state-of-the-art encryption and comply with the best industry practices to ensure that your data is stored securely and accessed only by authorized users.",
+      "I am really happy with the results. They have helped me with digital marketing, SEO and website design services. Their team is very knowledgeable, experienced and helpful. The quality of work they do is outstanding. They are also up to date with the latest trends in the digital marketing industry. I highly recommend them if you are looking to get ahead of your competition.",
   },
 ];
 
@@ -59,7 +58,7 @@ export const FAQs = () => {
     <div className="bg-black text-white py-[72px] sm:py-24 bg-gradient-to-b from-[#5D2CA8] to-black ">
       <div className="container">
         <h2 className="text-5xl sm:text-6xl sm:w-[648px] mx-auto text-center text-white tracking-tighter">
-          Frequently Asked Questions
+        Love From Clients
         </h2>
         <div className="mt-12 max-w-[648px] mx-auto">
          {items.map(({question, answer}) => (

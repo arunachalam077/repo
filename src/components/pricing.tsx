@@ -26,13 +26,13 @@ export function PricingTab(props: PricingTabProps) {
         <div className="mb-5">
           <div className="text-white/70 font-semibold mb-1">{props.planName}</div>
           <div className="inline-flex items-baseline mb-2">
-            <span className="text-white/70 font-bold text-3xl">$</span>
+            <span className="text-white/70 font-bold text-3xl">₹</span>
             <span className="text-white/50 font-bold text-4xl">{props.yearly ? props.price.yearly : props.price.monthly}</span>
             <span className="text-white/70 font-medium">/mo</span>
           </div>
           <div className="text-sm text-white/70 mb-5">{props.planDescription}</div>
           <a className="w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-[#5D2CA8] px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-[#5D2CA2] focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-600 transition-colors duration-150" href="#0">
-            Purchase Plan
+            Plan
           </a>
         </div>
         <div className="text-slate-200 font-medium mb-3">Includes:</div>
@@ -75,44 +75,44 @@ export default function PricingTable() {
         {/* Pricing tab 1 */}
         <PricingTab
           yearly={isAnnual}
-          planName="Essential"
-          price={{ yearly: 29, monthly: 35 }}
-          planDescription="There are many variations available, but the majority have suffered."
+          planName="Social Media Marketing"
+          price={{ yearly: 15000, monthly: 3500 }}
+          planDescription=""
           features={[
-            'Unlimited placeholder texts',
-            'Consectetur adipiscing elit',
-            'Excepteur sint occaecat cupidatat',
-            'Officia deserunt mollit anim',
+            'Personalized Engagement',
+            'Strategic Collaboration',
+            'Content Diversity',
+            'Responsive Interaction',
           ]} />
 
         {/* Pricing tab 2 */}
         <PricingTab
           yearly={isAnnual}
           popular={true}
-          planName="Perform"
-          price={{ yearly: 49, monthly: 55 }}
-          planDescription="There are many variations available, but the majority have suffered."
+          planName="SEO - Search Engine Optimization"
+          price={{ yearly: 12000, monthly: 5500 }}
+          planDescription=""
           features={[
-            'Unlimited placeholder texts',
-            'Consectetur adipiscing elit',
-            'Excepteur sint occaecat cupidatat',
-            'Officia deserunt mollit anim',
-            'Predefined chunks as necessary',
+            'Expert Keyword Research',
+            'White Hat SEO Techniques',
+            'Content Optimization',
+            'On-Page SEO',
+            'Continuous Monitoring and Adjustments',
           ]} />
 
         {/* Pricing tab 3 */}
         <PricingTab
           yearly={isAnnual}
-          planName="Enterprise"
-          price={{ yearly: 79, monthly: 85 }}
-          planDescription="There are many variations available, but the majority have suffered."
+          planName="Pay Per Click - PPC"
+          price={{ yearly: 7900, monthly: 4500 }}
+          planDescription=""
           features={[
-            'Unlimited placeholder texts',
-            'Consectetur adipiscing elit',
-            'Excepteur sint occaecat cupidatat',
-            'Officia deserunt mollit anim',
-            'Predefined chunks as necessary',
-            'Free from repetition',
+            'Rapid Visibility',
+            'Cost-Effective Spending',
+            'Targeted Campaigns',
+            'Measurable Results',
+            'Expert Management',
+           
           ]} />
 
       </div>
